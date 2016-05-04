@@ -12,7 +12,7 @@ $ npm install --save-dev eslint @mgtitimoli/eslint-config
 
 ## Usage
 
-I decided not to extend [eslint:recommended](http://eslint.org/docs/user-guide/migrating-to-1.0.0) configuration to support setups where this is not wanted (I personally have not found any one yet, but it might appear... *long silence*... someday...). Anyway, if you want to use it together with this config, and I **highly** recommend you to do that, it is as simple as using on each part of the documentation where it says:
+I decided not to extend [eslint:recommended](http://eslint.org/docs/user-guide/migrating-to-1.0.0) configuration to support setups where this is not desired (I personally have not found any one yet, but it might appear... *long silence*... someday...). Anyway, if you want to use it together with this config, and I **highly** recommend you to do that, it is as simple as using on each part of the documentation where it says:
 
 ```javascript
 "@mgtitimoli/eslint-config"
@@ -63,7 +63,7 @@ This configuration, at the same time, extends the following ones (also present i
 
 You can pick just the one(s) that you need, specifying them as follows:
 
-* For example, if we would want to use **best-practices** and **variables** configurations, then your `.eslintrc.json` should contain:
+* For example, if you would want to use **best-practices** and **variables** configurations, then your `.eslintrc.json` should contain:
 
 ```json
 {
@@ -78,9 +78,9 @@ You can pick just the one(s) that you need, specifying them as follows:
 
 I will enumerate below some of the reasons that pushed me to publish this package:
 
-1. **The obvious reason**: it allows anyone to be able to use it just doing a simple `npm install`
+1. **The obvious one**: it allows anyone to be able to use it just doing a simple `npm install`
 2. I have been using this configuration in a lot of projects and I really liked their resulting shape and low complexity
-3. It helps me sharing my passion about the code quality and encourages teams to take some time to discuss about this
+3. It helps me sharing my passion about code quality and best practices, and encourages teams to take some time to discuss about this
 
 ## License
 
