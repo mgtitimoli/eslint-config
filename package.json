@@ -1,0 +1,26 @@
+{
+  "name": "@mgtitimoli/eslint-config",
+  "version": "0.1.0",
+  "description": "A really strict eslint configuration",
+  "license": "Unlicense",
+  "author": {
+    "name": "Mauro Titimoli",
+    "email": "mgtitimoli@gmail.com",
+    "url"  : "https://github.com/mgtitimoli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mgtitimoli/eslint-config"
+  },
+  "bugs": {
+    "url": "http://github.com/mgtitimoli/eslint-config/issues"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": "^2.8.0"
+  }
+}
