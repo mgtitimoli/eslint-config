@@ -1,7 +1,7 @@
 {
   "name": "@mgtitimoli/eslint-config",
   "version": "0.1.0",
-  "description": "A really strict eslint configuration",
+  "description": "A predictable and strict ESLint Shareable Config",
   "license": "Unlicense",
   "author": {
     "name": "Mauro Titimoli",
