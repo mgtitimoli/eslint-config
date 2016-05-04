@@ -1,10 +1,22 @@
 # [ECMAScript 6](http://eslint.org/docs/rules/#ecmascript-6)
 
-## [arrow-body-style](http://eslint.org/docs/rules/arrow-body-style)
+## Usage
+
+* `.eslintrc.json`
+
+```json
+{
+    "extends": "@mgtitimoli/eslint-config/es6"
+}
+```
+
+## Rules settings
+
+### [arrow-body-style](http://eslint.org/docs/rules/arrow-body-style)
 
 > Ensures arrow functions bodies are enclosed with curly braces only when needed
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -12,7 +24,7 @@
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // BAD
@@ -27,11 +39,11 @@ const oddNumbers = [ 1, 2, 3, 4, 5 ].filter(
 ); 
 ```
 
-## [arrow-parens](http://eslint.org/docs/rules/arrow-parens)
+### [arrow-parens](http://eslint.org/docs/rules/arrow-parens)
 
 > Ensures arrow functions arguments are enclosed with brackets only when needed (no arguments or more than one)
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -39,7 +51,7 @@ const oddNumbers = [ 1, 2, 3, 4, 5 ].filter(
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // BAD
@@ -53,11 +65,11 @@ const oddNumbers = [ 1, 2, 3, 4, 5 ].filter(
 ); 
 ```
 
-## [arrow-spacing](http://eslint.org/docs/rules/arrow-spacing)
+### [arrow-spacing](http://eslint.org/docs/rules/arrow-spacing)
 
 > Enforces the spacing between arguments, fat arrow and body of arrow functions
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -65,7 +77,7 @@ const oddNumbers = [ 1, 2, 3, 4, 5 ].filter(
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // GOOD
@@ -76,11 +88,11 @@ const oddNumbers = [ 1, 2, 3, 4, 5 ].filter(
 }
 ```
 
-## [generator-star-spacing](http://eslint.org/docs/rules/generator-star-spacing)
+### [generator-star-spacing](http://eslint.org/docs/rules/generator-star-spacing)
 
 > Enforces the spacing between the function keyword and the star in generators
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -88,7 +100,7 @@ const oddNumbers = [ 1, 2, 3, 4, 5 ].filter(
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // GOOD
@@ -97,11 +109,11 @@ function gen1 *() {
 }
 ```
 
-## [no-const-assign](http://eslint.org/docs/rules/no-const-assign)
+### [no-const-assign](http://eslint.org/docs/rules/no-const-assign)
 
 > Alerts of constants that are trying to be modified
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -109,11 +121,11 @@ function gen1 *() {
 }
 ```
 
-## [no-duplicate-imports](http://eslint.org/docs/rules/no-duplicate-imports)
+### [no-duplicate-imports](http://eslint.org/docs/rules/no-duplicate-imports)
 
 > Avoids the use of multiple imports/exports statements of the same file
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -121,7 +133,7 @@ function gen1 *() {
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // BAD
@@ -132,11 +144,11 @@ import { fn2 } from "module";
 import { fn1, fn2 } from "module";
 ```
 
-## [no-useless-constructor](http://eslint.org/docs/rules/no-useless-constructor)
+### [no-useless-constructor](http://eslint.org/docs/rules/no-useless-constructor)
 
 > Disallows the declaration of empty constructors
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -144,11 +156,11 @@ import { fn1, fn2 } from "module";
 }
 ```
 
-## [no-var](http://eslint.org/docs/rules/no-var)
+### [no-var](http://eslint.org/docs/rules/no-var)
 
 > Disallows the declaration of variables using **var**
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -156,11 +168,11 @@ import { fn1, fn2 } from "module";
 }
 ```
 
-## [object-shorthand](http://eslint.org/docs/rules/object-shorthand)
+### [object-shorthand](http://eslint.org/docs/rules/object-shorthand)
 
 > Enforces the use of object literals shorthand notation whenever possible
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -168,7 +180,7 @@ import { fn1, fn2 } from "module";
 }
 ```
 
-### example
+#### example
 
 ```javascript
 const name = "some name";
@@ -193,11 +205,11 @@ const user = {
 };
 ```
 
-## [prefer-arrow-callback](http://eslint.org/docs/rules/prefer-arrow-callback)
+### [prefer-arrow-callback](http://eslint.org/docs/rules/prefer-arrow-callback)
 
 > Disallows the use of anonymous function expressions as callbacks, preferring arrow functions for this cases
 
-### example
+#### example
 
 ```javascript
 // BAD
@@ -215,7 +227,7 @@ asyncFn((error, result) => {
 });
 ```
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -223,11 +235,11 @@ asyncFn((error, result) => {
 }
 ```
 
-## [prefer-const](http://eslint.org/docs/rules/prefer-const)
+### [prefer-const](http://eslint.org/docs/rules/prefer-const)
 
 > Enforces the use of const statements for variables that are not reassigned
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -235,11 +247,11 @@ asyncFn((error, result) => {
 }
 ```
 
-## [prefer-reflect](http://eslint.org/docs/rules/prefer-reflect)
+### [prefer-reflect](http://eslint.org/docs/rules/prefer-reflect)
 
 > Disallows the use of old APIs now provided on the Reflect object
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -247,11 +259,11 @@ asyncFn((error, result) => {
 }
 ```
 
-## [prefer-rest-params](http://eslint.org/docs/rules/prefer-rest-params)
+### [prefer-rest-params](http://eslint.org/docs/rules/prefer-rest-params)
 
 > Enforces the use of rest operator whenever **arguments** object is found
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -259,7 +271,7 @@ asyncFn((error, result) => {
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // BAD
@@ -283,11 +295,11 @@ function sumWithSpread(...numbers) {
 }
 ```
 
-## [prefer-spread](http://eslint.org/docs/rules/prefer-spread)
+### [prefer-spread](http://eslint.org/docs/rules/prefer-spread)
 
 > Enforces the use of the spread operator instead of **Function.prototype.apply**
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -295,7 +307,7 @@ function sumWithSpread(...numbers) {
 }
 ```
 
-### example
+#### example
 
 ```javascript
 const args = [ "arg1", "arg2", "arg3" ];
@@ -307,11 +319,11 @@ myFunc.apply(null, args);
 myFunc(...args);
 ```
 
-## [require-yield](http://eslint.org/docs/rules/require-yield)
+### [require-yield](http://eslint.org/docs/rules/require-yield)
 
 > Prevents the declaration of generators that do not include **yield** statements
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -319,11 +331,11 @@ myFunc(...args);
 }
 ```
 
-## [template-curly-spacing](http://eslint.org/docs/rules/template-curly-spacing)
+### [template-curly-spacing](http://eslint.org/docs/rules/template-curly-spacing)
 
 > Enforces the spacing inside of template literals
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -331,18 +343,18 @@ myFunc(...args);
 }
 ```
 
-### example
+#### example
 
 ```javascript
 const user    = "John Doe";
 const message = `Hello ${ user }`;
 ```
 
-## [yield-star-spacing](http://eslint.org/docs/rules/yield-star-spacing)
+### [yield-star-spacing](http://eslint.org/docs/rules/yield-star-spacing)
 
 > Enforces the spacing after the star in **yield*** expressions
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -350,7 +362,7 @@ const message = `Hello ${ user }`;
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // GOOD

@@ -1,10 +1,22 @@
 # [Stylistic Issues](http://eslint.org/docs/rules/#stylistic-issues)
 
-## [array-bracket-spacing](http://eslint.org/docs/rules/array-bracket-spacing)
+## Usage
+
+* `.eslintrc.json`
+
+```json
+{
+    "extends": "@mgtitimoli/eslint-config/stylistic"
+}
+```
+
+## Rules settings
+
+### [array-bracket-spacing](http://eslint.org/docs/rules/array-bracket-spacing)
 
 > Enforces spacing between arrays square brackets and their first and last elements
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -12,7 +24,7 @@
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // BAD
@@ -22,11 +34,11 @@ var arr1 = ["elem1", "elem2", "elem3"];
 var arr2 = [ "elem1", "elem2", "elem3" ];
 ```
 
-## [brace-style](http://eslint.org/docs/rules/brace-style)
+### [brace-style](http://eslint.org/docs/rules/brace-style)
 
 > Enforces the Stroustrup brace style variant
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -61,11 +73,11 @@ catch(e) {
 }
 ```
 
-## [camelcase](http://eslint.org/docs/rules/camelcase)
+### [camelcase](http://eslint.org/docs/rules/camelcase)
 
 > Enforces the use of camel case convention for identifiers: variables, object members, and functions names
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -73,11 +85,11 @@ catch(e) {
 }
 ```
 
-## [comma-spacing](http://eslint.org/docs/rules/comma-spacing)
+### [comma-spacing](http://eslint.org/docs/rules/comma-spacing)
 
 > Enforces the spacing after the use of a comma
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -85,11 +97,11 @@ catch(e) {
 }
 ```
 
-## [comma-style](http://eslint.org/docs/rules/comma-style)
+### [comma-style](http://eslint.org/docs/rules/comma-style)
 
 > Enforces placing the comma used to separate array and object members in the same line of the current one
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -97,7 +109,7 @@ catch(e) {
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // BAD
@@ -121,11 +133,11 @@ var obj = {
 };
 ```
 
-## [computed-property-spacing](http://eslint.org/docs/rules/computed-property-spacing)
+### [computed-property-spacing](http://eslint.org/docs/rules/computed-property-spacing)
 
 > Disallows the spacing when using computed properties
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -133,7 +145,7 @@ var obj = {
 }
 ```
 
-### example
+#### example
 
 ```javascript
 var propName = "p1";
@@ -145,11 +157,11 @@ var obj = {
 var propValue = obj[propName];
 ```
 
-## [eol-last](http://eslint.org/docs/rules/eol-last)
+### [eol-last](http://eslint.org/docs/rules/eol-last)
 
 > Enforces the presence of an **EOL** symbol at the end of the files
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -157,11 +169,11 @@ var propValue = obj[propName];
 }
 ```
 
-## [func-style](http://eslint.org/docs/rules/func-style)
+### [func-style](http://eslint.org/docs/rules/func-style)
 
 > Enforces the use of function declarations whenever possible
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -169,7 +181,7 @@ var propValue = obj[propName];
 }
 ```
 
-### example
+#### example
 
 ```javascript
 var fn = function () {
@@ -181,11 +193,11 @@ function fn() {
 }
 ```
 
-## [indent](http://eslint.org/docs/rules/indent)
+### [indent](http://eslint.org/docs/rules/indent)
 
 > Enforces the use of 4 spaces for indentation (it also enforces the indentation of switch case statements)
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -193,11 +205,11 @@ function fn() {
 }
 ```
 
-## [key-spacing](http://eslint.org/docs/rules/key-spacing)
+### [key-spacing](http://eslint.org/docs/rules/key-spacing)
 
 > Enforces the alignment of object members taking into account the colons
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -205,7 +217,7 @@ function fn() {
 }
 ```
 
-### example
+#### example
 
 ```javascript
 var obj = {
@@ -220,11 +232,11 @@ var obj = {
 };
 ```
 
-## [keyword-spacing](http://eslint.org/docs/rules/keyword-spacing)
+### [keyword-spacing](http://eslint.org/docs/rules/keyword-spacing)
 
 > Enforces the spacing around keywords
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -232,11 +244,11 @@ var obj = {
 }
 ```
 
-## [linebreak-style](http://eslint.org/docs/rules/linebreak-style)
+### [linebreak-style](http://eslint.org/docs/rules/linebreak-style)
 
 > Enforces all line endings are unix like (**LF** = \n)
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -244,11 +256,11 @@ var obj = {
 }
 ```
 
-## [lines-around-comment](http://eslint.org/docs/rules/lines-around-comment)
+### [lines-around-comment](http://eslint.org/docs/rules/lines-around-comment)
 
 > Enforces the present of an empty line before comments
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -259,11 +271,11 @@ var obj = {
 }
 ```
 
-## [max-depth](http://eslint.org/docs/rules/max-depth)
+### [max-depth](http://eslint.org/docs/rules/max-depth)
 
 > Enforces the maximum depth that blocks can be nested to 4
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -271,11 +283,11 @@ var obj = {
 }
 ```
 
-## [max-len](http://eslint.org/docs/rules/max-len)
+### [max-len](http://eslint.org/docs/rules/max-len)
 
 > Enforces the maximum characters a line can have to 80 
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -283,11 +295,11 @@ var obj = {
 }
 ```
 
-## [max-nested-callbacks](http://eslint.org/docs/rules/max-nested-callbacks)
+### [max-nested-callbacks](http://eslint.org/docs/rules/max-nested-callbacks)
 
 > Enforces the maximum depth that callbacks can be nested to 3
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -295,11 +307,11 @@ var obj = {
 }
 ```
 
-## [max-params](http://eslint.org/docs/rules/max-params)
+### [max-params](http://eslint.org/docs/rules/max-params)
 
 > Warns when a function is using more than 4 parameters
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -307,11 +319,11 @@ var obj = {
 }
 ```
 
-## [max-statements](http://eslint.org/docs/rules/max-statements)
+### [max-statements](http://eslint.org/docs/rules/max-statements)
 
 > Enforces the maximum number of statements that a function can have to 20 (inner functions are not taken into account for the calculation)
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -319,11 +331,11 @@ var obj = {
 }
 ```
 
-## [max-statements-per-line](http://eslint.org/docs/rules/max-statements-per-line)
+### [max-statements-per-line](http://eslint.org/docs/rules/max-statements-per-line)
 
 > Disallows the use of more than 1 statement in the same line
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -331,11 +343,11 @@ var obj = {
 }
 ```
 
-## [new-cap](http://eslint.org/docs/rules/new-cap)
+### [new-cap](http://eslint.org/docs/rules/new-cap)
 
 > Enforces the use of capital letters for functions that are called with **new** (constructors)
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -343,11 +355,11 @@ var obj = {
 }
 ```
 
-## [new-parens](http://eslint.org/docs/rules/new-parens)
+### [new-parens](http://eslint.org/docs/rules/new-parens)
 
 > Enforces the use of parenthesis when calling functions with **new** (constructors)
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -355,11 +367,11 @@ var obj = {
 }
 ```
 
-## [newline-after-var](http://eslint.org/docs/rules/newline-after-var)
+### [newline-after-var](http://eslint.org/docs/rules/newline-after-var)
 
 > Enforces the presence of an empty line after variable declarations groups
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -367,7 +379,7 @@ var obj = {
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // BAD
@@ -382,11 +394,11 @@ var v2 = "value 1";
 console.log(v1, v2);
 ```
 
-## [newline-before-return](http://eslint.org/docs/rules/newline-before-return)
+### [newline-before-return](http://eslint.org/docs/rules/newline-before-return)
 
 > Enforces the presence of an empty line before a return statement (only if it is not the only statement within a block)
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -394,7 +406,7 @@ console.log(v1, v2);
 }
 ```
 
-### example
+#### example
 
 ```javascript
 function foo() {
@@ -410,11 +422,11 @@ function foo(bar) {
 }
 ```
 
-## [newline-per-chained-call](http://eslint.org/docs/rules/newline-per-chained-call)
+### [newline-per-chained-call](http://eslint.org/docs/rules/newline-per-chained-call)
 
 > Enforces a new line after each method invocation in a call chain
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -424,7 +436,7 @@ function foo(bar) {
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // GOOD
@@ -437,11 +449,11 @@ obj
     .method3();
 ```
 
-## [no-array-constructor](http://eslint.org/docs/rules/no-array-constructor)
+### [no-array-constructor](http://eslint.org/docs/rules/no-array-constructor)
 
 > Disallows the use of the **Array** constructor when called with more than a number parameter (length)
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -449,11 +461,11 @@ obj
 }
 ```
 
-## [no-bitwise](http://eslint.org/docs/rules/no-bitwise)
+### [no-bitwise](http://eslint.org/docs/rules/no-bitwise)
 
 > Disallows the use of bitwise operators with the exception of **^** (**XOR**)
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -461,11 +473,11 @@ obj
 }
 ```
 
-## [no-lonely-if](http://eslint.org/docs/rules/no-lonely-if)
+### [no-lonely-if](http://eslint.org/docs/rules/no-lonely-if)
 
 > Prevents an if statement to be the only statement within an else block (it must be placed right after the else) 
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -473,7 +485,7 @@ obj
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // BAD
@@ -495,11 +507,11 @@ else if (bar) {
 }
 ```
 
-## [no-mixed-spaces-and-tabs](http://eslint.org/docs/rules/no-mixed-spaces-and-tabs)
+### [no-mixed-spaces-and-tabs](http://eslint.org/docs/rules/no-mixed-spaces-and-tabs)
 
 > Prevents mixin tabs with spaces, since only the latter are allowed
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -507,11 +519,11 @@ else if (bar) {
 }
 ```
 
-## [no-multiple-empty-lines](http://eslint.org/docs/rules/no-multiple-empty-lines)
+### [no-multiple-empty-lines](http://eslint.org/docs/rules/no-multiple-empty-lines)
 
 > Disallows the appearence of multiple consecutive empty lines
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -519,11 +531,11 @@ else if (bar) {
 }
 ```
 
-## [no-nested-ternary](http://eslint.org/docs/rules/no-nested-ternary)
+### [no-nested-ternary](http://eslint.org/docs/rules/no-nested-ternary)
 
 > Disallows nesting ternary constructions
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -531,11 +543,11 @@ else if (bar) {
 }
 ```
 
-## [no-new-object](http://eslint.org/docs/rules/no-new-object)
+### [no-new-object](http://eslint.org/docs/rules/no-new-object)
 
 > Disallows creating objects using the **Object** constructor with **new**
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -543,11 +555,11 @@ else if (bar) {
 }
 ```
 
-## [no-spaced-func](http://eslint.org/docs/rules/no-spaced-func)
+### [no-spaced-func](http://eslint.org/docs/rules/no-spaced-func)
 
 > Disallows the spacing between the name and the parenthesis of a function
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -555,7 +567,7 @@ else if (bar) {
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // BAD
@@ -567,11 +579,11 @@ function fn() {
 }
 ```
 
-## [no-trailing-spaces](http://eslint.org/docs/rules/no-trailing-spaces)
+### [no-trailing-spaces](http://eslint.org/docs/rules/no-trailing-spaces)
 
 > Prevents the existance of trailing spaces
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -579,11 +591,11 @@ function fn() {
 }
 ```
 
-## [no-underscore-dangle](http://eslint.org/docs/rules/no-underscore-dangle)
+### [no-underscore-dangle](http://eslint.org/docs/rules/no-underscore-dangle)
 
 > Enables the use of an underscore at the beginning of identifiers to denote privacy
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -591,11 +603,11 @@ function fn() {
 }
 ```
 
-## [no-unneeded-ternary](http://eslint.org/docs/rules/no-unneeded-ternary)
+### [no-unneeded-ternary](http://eslint.org/docs/rules/no-unneeded-ternary)
 
 > Prevents the use of ternary operators when the same can be achived just using the conditional expression
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -603,7 +615,7 @@ function fn() {
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // BAD
@@ -619,11 +631,11 @@ function isGreaterThan(min, number) {
 }
 ```
 
-## [no-whitespace-before-property](http://eslint.org/docs/rules/no-whitespace-before-property)
+### [no-whitespace-before-property](http://eslint.org/docs/rules/no-whitespace-before-property)
 
 > Disallows the spacing that can be used between the object and one of its members when trying to access to it
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -631,7 +643,7 @@ function isGreaterThan(min, number) {
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // BAD
@@ -647,11 +659,11 @@ console.log(
 );
 ```
 
-## [object-curly-spacing](http://eslint.org/docs/rules/object-curly-spacing)
+### [object-curly-spacing](http://eslint.org/docs/rules/object-curly-spacing)
 
 > Enforces the spacing between object members and opening and closing curly braces
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -659,7 +671,7 @@ console.log(
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // BAD
@@ -669,11 +681,11 @@ var obj = {m1: "value1", m2: "value 2"};
 var obj = { m1: "value1", m2: "value 2" };
 ```
 
-## [one-var](http://eslint.org/docs/rules/one-var)
+### [one-var](http://eslint.org/docs/rules/one-var)
 
 > Disallows the declaration of multiple variables using a single statement
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -681,7 +693,7 @@ var obj = { m1: "value1", m2: "value 2" };
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // BAD
@@ -697,11 +709,11 @@ var v2;
 var v3 = "value 3";
 ```
 
-## [quote-props](http://eslint.org/docs/rules/quote-props)
+### [quote-props](http://eslint.org/docs/rules/quote-props)
 
 > Enforces quotation of object members to be consistent: none or all members have to quoted
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -709,16 +721,16 @@ var v3 = "value 3";
 }
 ```
 
-### example
+#### example
 
 ```javascript
 ```
 
-## [quotes](http://eslint.org/docs/rules/quotes)
+### [quotes](http://eslint.org/docs/rules/quotes)
 
 > Enforces the use of double quotes for strings
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -726,11 +738,11 @@ var v3 = "value 3";
 }
 ```
 
-## [semi](http://eslint.org/docs/rules/semi)
+### [semi](http://eslint.org/docs/rules/semi)
 
 > Enforces the use of semicolons to terminate all the statements with the exception of **blocks**
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -738,11 +750,11 @@ var v3 = "value 3";
 }
 ```
 
-## [space-before-blocks](http://eslint.org/docs/rules/space-before-blocks)
+### [space-before-blocks](http://eslint.org/docs/rules/space-before-blocks)
 
 > Enforces functions and classes to start with an empty line and disallows this behaviour for other blocks
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -754,7 +766,7 @@ var v3 = "value 3";
 }
 ```
 
-### example
+#### example
 
 ```javascript
 // BAD
@@ -787,11 +799,11 @@ for (const item of items) {
 }
 ```
 
-## [space-before-function-paren](http://eslint.org/docs/rules/space-before-function-paren)
+### [space-before-function-paren](http://eslint.org/docs/rules/space-before-function-paren)
 
 > Enforces spacing before function parenthesis only for anonymous functions
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -802,11 +814,11 @@ for (const item of items) {
 }
 ```
 
-## [space-in-parens](http://eslint.org/docs/rules/space-in-parens)
+### [space-in-parens](http://eslint.org/docs/rules/space-in-parens)
 
 > Disallows parenthesis and their content to be separated by space 
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -814,11 +826,11 @@ for (const item of items) {
 }
 ```
 
-## [space-infix-ops](http://eslint.org/docs/rules/space-infix-ops)
+### [space-infix-ops](http://eslint.org/docs/rules/space-infix-ops)
 
 > Enforces spacing around infix operators
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -826,11 +838,11 @@ for (const item of items) {
 }
 ```
 
-## [space-unary-ops](http://eslint.org/docs/rules/space-unary-ops)
+### [space-unary-ops](http://eslint.org/docs/rules/space-unary-ops)
 
 > Enforces or prevents spacing around unary operators
 
-### configuration
+#### configuration
 
 ```json
 {
@@ -838,7 +850,7 @@ for (const item of items) {
 }
 ```
 
-### example
+#### example
 
 ```javascript
 delete foo.bar;
@@ -852,11 +864,11 @@ void 0;
 foo--;
 ```
 
-## [spaced-comment](http://eslint.org/docs/rules/spaced-comment)
+### [spaced-comment](http://eslint.org/docs/rules/spaced-comment)
 
 > Enforces spacing after the multiline (/*) or single comment (//) indicator
 
-### configuration
+#### configuration
 
 ```json
 {

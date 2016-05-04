@@ -57,10 +57,10 @@ the following instead:
 
 This configuration, at the same time, extends the following ones (also present in this package)
 
-- [@mgtitimoli/eslint-config/best-practices]()
-- [@mgtitimoli/eslint-config/variables]()
-- [@mgtitimoli/eslint-config/stylistic]()
-- [@mgtitimoli/eslint-config/es6]()
+- [@mgtitimoli/eslint-config/best-practices](./best-practices)
+- [@mgtitimoli/eslint-config/variables](./variables)
+- [@mgtitimoli/eslint-config/stylistic](./stylistic)
+- [@mgtitimoli/eslint-config/es6](./es6)
 
 You can pick just the one(s) that you need, specifying them as follows:
 
@@ -79,7 +79,7 @@ You can pick just the one(s) that you need, specifying them as follows:
 
 I will enumerate below some of the reasons that pushed me to publish this package:
 
-1. **the obvious reason**: it allows anyone to be able to use it just doing a simple `npm install`
+1. **The obvious reason**: it allows anyone to be able to use it just doing a simple `npm install`
 2. I have been using this configuration in a lot of projects and I really liked their resulting shape and low complexity
 3. It helps me sharing my passion about the code quality and encourages teams to take some time to discuss about this
 
