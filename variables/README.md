@@ -14,7 +14,7 @@
 
 ### [no-shadow-restricted-names](http://eslint.org/docs/rules/no-shadow-restricted-names)
 
-> 
+> Prevents shallowing native references
 
 #### configuration
 
@@ -26,7 +26,7 @@
 
 ### [no-undef-init](http://eslint.org/docs/rules/no-undef-init)
 
-> 
+> Disallows the explicit (and unnecessary) use of **undefined** on variables initialization
 
 #### configuration
 
@@ -38,7 +38,7 @@
 
 ### [no-use-before-define](http://eslint.org/docs/rules/no-use-before-define)
 
-> 
+> Disallows the use of variables before defined them
 
 #### configuration
 
