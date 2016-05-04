@@ -8,8 +8,7 @@ A predictable and strict ESLint [Shareable Config](http://eslint.org/docs/develo
 $ npm install --save-dev eslint @mgtitimoli/eslint-config
 ```
 
-> This configuration just specifies a group of [ESLint](https://github.com/eslint/eslint) settings, this is why we need to install it, since it is by its [use](http://eslint.org/docs/user-guide/command-line-interface) (also have a look to the available [integrations](http://eslint.org/docs/user-guide/integrations)), how we are able to ensure our rules are respected
-
+> This configuration just specifies a group of [ESLint](https://github.com/eslint/eslint) settings, this is why we need to install `eslint`, since by its [use](http://eslint.org/docs/user-guide/command-line-interface) (also have a look to the available [integrations](http://eslint.org/docs/user-guide/integrations)), is how we check our rules are respected
 
 ## Usage
 
@@ -64,7 +63,7 @@ This configuration, at the same time, extends the following ones (also present i
 
 You can pick just the one(s) that you need, specifying them as follows:
 
-* For example, if we would want to use **best-practices** and **variables** configurations, the your `.eslintrc.json` should contain:
+* For example, if we would want to use **best-practices** and **variables** configurations, then your `.eslintrc.json` should contain:
 
 ```json
 {
@@ -82,7 +81,6 @@ I will enumerate below some of the reasons that pushed me to publish this packag
 1. **The obvious reason**: it allows anyone to be able to use it just doing a simple `npm install`
 2. I have been using this configuration in a lot of projects and I really liked their resulting shape and low complexity
 3. It helps me sharing my passion about the code quality and encourages teams to take some time to discuss about this
-
 
 ## License
 
