@@ -1,6 +1,6 @@
 {
   "name": "@mgtitimoli/eslint-config",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A predictable and strict ESLint Shareable Config",
   "license": "Unlicense",
   "author": {
