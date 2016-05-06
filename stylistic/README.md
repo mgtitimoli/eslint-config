@@ -2,7 +2,7 @@
 
 ## Usage
 
-* `.eslintrc.json`
+- `.eslintrc.json`
 
 ```json
 {

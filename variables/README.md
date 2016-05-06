@@ -2,7 +2,7 @@
 
 ## Usage
 
-* `.eslintrc.json`
+- `.eslintrc.json`
 
 ```json
 {
@@ -14,7 +14,7 @@
 
 ### [no-shadow-restricted-names](http://eslint.org/docs/rules/no-shadow-restricted-names)
 
-> Prevents shallowing native references
+> Prevents shallowing (declare local variables that takes precedence over the ones in higher scopes) native references
 
 #### configuration
 

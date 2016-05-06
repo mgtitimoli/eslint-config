@@ -35,7 +35,7 @@ the following instead:
 
 **ESLint** allows being configured using a widely amount of [flavours](http://eslint.org/docs/user-guide/configuring#configuration-file-formats), but I personally find the followings very practical:
 
-* Place all the settings under an **eslintConfig** entry in your `package.json`:
+- Place all the settings under an **eslintConfig** entry in your `package.json`:
 
 ```json
 {
@@ -46,7 +46,7 @@ the following instead:
 }
 ```
 
-* Create an `.eslintrc.json` to hold all the configuration:
+- Create an `.eslintrc.json` to hold all the configuration:
 
 ```json
 {
@@ -65,7 +65,7 @@ This configuration, at the same time, extends the following ones (also present i
 
 You can pick just the one(s) that you need, specifying them as follows:
 
-* For example, if you would want to use **best-practices** and **variables** configurations, then your `.eslintrc.json` should contain:
+- For example, if you would want to use **best-practices** and **variables** configurations, then your `.eslintrc.json` should contain:
 
 ```json
 {
@@ -84,7 +84,9 @@ I will enumerate below some of the reasons that pushed me to publish this packag
 2. I have been using this configuration in a lot of projects and I really liked their resulting shape and low complexity
 3. It helps me sharing my passion about code quality and best practices, and encourages teams to take some time to discuss about this
 
-I could have included more settings, but instead of doing that, I have distributed them into the following packages:
+## Other configurations
+
+You might also be interested in the following configurations:
 
 - [@mgtitimoli/eslint-config-babel](https://github.com/mgtitimoli/eslint-config-babel)
 - [@mgtitimoli/eslint-config-react](https://github.com/mgtitimoli/eslint-config-react)
