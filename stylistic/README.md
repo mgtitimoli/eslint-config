@@ -521,13 +521,13 @@ else if (bar) {
 
 ### [no-multiple-empty-lines](http://eslint.org/docs/rules/no-multiple-empty-lines)
 
-> Disallows the appearence of multiple consecutive empty lines
+> Disallows the appearance of multiple consecutive empty lines
 
 #### configuration
 
 ```json
 {
-    "no-multiple-empty-lines": "error"
+    "no-multiple-empty-lines": [ "error", { "max": 1 } ]
 }
 ```
 

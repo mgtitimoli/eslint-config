@@ -33,7 +33,7 @@ module.exports = {
         "no-bitwise"                   : [ "error", { "allow": [ "^" ] } ],
         "no-lonely-if"                 : "error",
         "no-mixed-spaces-and-tabs"     : "error",
-        "no-multiple-empty-lines"      : "error",
+        "no-multiple-empty-lines"      : [ "error", { "max": 1 } ],
         "no-nested-ternary"            : "error",
         "no-new-object"                : "error",
         "no-spaced-func"               : "error",
