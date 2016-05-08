@@ -25,7 +25,6 @@ module.exports = {
         "new-cap"                 : "error",
         "new-parens"              : "error",
         "newline-after-var"       : "error",
-        "newline-before-return"   : "error",
         "newline-per-chained-call": [ "error", {
             "ignoreChainWithDepth": 1
         } ],

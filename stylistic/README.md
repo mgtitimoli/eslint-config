@@ -394,34 +394,6 @@ var v2 = "value 1";
 console.log(v1, v2);
 ```
 
-### [newline-before-return](http://eslint.org/docs/rules/newline-before-return)
-
-> Enforces the presence of an empty line before a return statement (only if it is not the only statement within a block)
-
-#### configuration
-
-```json
-{
-    "newline-before-return": "error"
-}
-```
-
-#### example
-
-```javascript
-function foo() {
-    return;
-}
-
-function foo(bar) {
-    if (!bar) {
-        return;
-    }
-
-    return bar;
-}
-```
-
 ### [newline-per-chained-call](http://eslint.org/docs/rules/newline-per-chained-call)
 
 > Enforces a new line after each method invocation in a call chain
