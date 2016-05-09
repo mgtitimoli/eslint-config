@@ -724,50 +724,13 @@ var v3 = "value 3";
 
 ### [space-before-blocks](http://eslint.org/docs/rules/space-before-blocks)
 
-> Enforces functions and classes to start with an empty line and disallows this behaviour for other blocks
+> Enforces spacing before blocks; it must be an space before the opening curly brace
 
 #### configuration
 
 ```json
 {
-    "space-before-blocks": [ "error", {
-        "classes"  : "always",
-        "functions": "always",
-        "keywords" : "never"
-    } ]
-}
-```
-
-#### example
-
-```javascript
-// BAD
-function f1() {
-    // ...
-}
-
-class MyClass {
-    // ...
-}
-
-for (const item of items) {
-
-    // ...
-}
-
-// GOOD
-function f1() {
-
-    // ...
-}
-
-class MyClass {
-
-    // ...
-}
-
-for (const item of items) {
-    // ...
+    "space-before-blocks": "error"
 }
 ```
 

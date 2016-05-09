@@ -45,12 +45,8 @@ module.exports = {
         "quote-props"                  : [ "error", "consistent-as-needed" ],
         "quotes"                       : [ "error", "double" ],
         "semi"                         : "error",
-        "space-before-blocks"          : [ "error", {
-            "classes"  : "always",
-            "functions": "always",
-            "keywords" : "never"
-        } ],
-        "space-before-function-paren": [ "error", {
+        "space-before-blocks"          : "error",
+        "space-before-function-paren"  : [ "error", {
             "anonymous": "always",
             "named"    : "never"
         } ],
