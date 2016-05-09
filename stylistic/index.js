@@ -42,7 +42,7 @@ module.exports = {
         "no-whitespace-before-property": "error",
         "object-curly-spacing"         : [ "error", "always" ],
         "one-var"                      : [ "error", "never" ],
-        "quote-props"                  : [ "error", "consistent-as-needed" ],
+        "quote-props"                  : [ "error", "consistent" ],
         "quotes"                       : [ "error", "double" ],
         "semi"                         : "error",
         "space-before-blocks"          : "error",
