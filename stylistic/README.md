@@ -256,21 +256,6 @@ var obj = {
 }
 ```
 
-### [lines-around-comment](http://eslint.org/docs/rules/lines-around-comment)
-
-> Enforces the present of an empty line before comments
-
-#### configuration
-
-```json
-{
-    "lines-around-comment": [ "error", {
-        "beforeBlockComment": true,
-        "beforeLineComment": true
-    } ]
-}
-```
-
 ### [max-depth](http://eslint.org/docs/rules/max-depth)
 
 > Enforces the maximum depth that blocks can be nested to 4

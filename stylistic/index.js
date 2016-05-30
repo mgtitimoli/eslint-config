@@ -12,20 +12,16 @@ module.exports = {
         "key-spacing"              : [ "error", { "align": "colon" } ],
         "keyword-spacing"          : "error",
         "linebreak-style"          : "error",
-        "lines-around-comment"     : [ "error", {
-            "beforeBlockComment": true,
-            "beforeLineComment" : true
-        } ],
-        "max-depth"               : "error",
-        "max-len"                 : "error",
-        "max-nested-callbacks"    : [ "error", 3 ],
-        "max-params"              : [ "warn", 4 ],
-        "max-statements"          : [ "error", { "max": 20 } ],
-        "max-statements-per-line" : "error",
-        "new-cap"                 : "error",
-        "new-parens"              : "error",
-        "newline-after-var"       : "error",
-        "newline-per-chained-call": [ "error", {
+        "max-depth"                : "error",
+        "max-len"                  : "error",
+        "max-nested-callbacks"     : [ "error", 3 ],
+        "max-params"               : [ "warn", 4 ],
+        "max-statements"           : [ "error", { "max": 20 } ],
+        "max-statements-per-line"  : "error",
+        "new-cap"                  : "error",
+        "new-parens"               : "error",
+        "newline-after-var"        : "error",
+        "newline-per-chained-call" : [ "error", {
             "ignoreChainWithDepth": 1
         } ],
         "no-array-constructor"         : "error",
