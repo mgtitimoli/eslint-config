@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "ionutvmi.path-autocomplete",
+    "leizongmin.node-module-intellisense"
+  ]
+}

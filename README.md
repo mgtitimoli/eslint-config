@@ -1,97 +1,89 @@
-# @mgtitimoli / eslint-config
+# @mgtitimoli/eslint-config
 
-A predictable and strict ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs)
+A predictable and strict ESLint (flat config) and Prettier configuration.
+
+## Contents
+
+- [Installation](#installation)
+- [Configs](#configs)
+- [Usage](#usage)
+- [Migrating from 0.x](#migrating-from-0x)
+- [License](#license)
 
 ## Installation
 
-```
-$ npm install --save-dev eslint @mgtitimoli/eslint-config
+```sh
+yarn add --dev @mgtitimoli/eslint-config eslint
 ```
 
-> This configuration just specifies a group of [ESLint](https://github.com/eslint/eslint) settings, this is why we need to install `eslint`, since by its [use](http://eslint.org/docs/user-guide/command-line-interface) (also have a look to the available [integrations](http://eslint.org/docs/user-guide/integrations)), is how we check our rules are respected
+The [`typescript.js`](./typescript.js) config also needs `typescript`:
+
+```sh
+yarn add --dev typescript
+```
+
+## Configs
+
+- [`base.js`](./base.js): general rules plus the
+  [import](https://www.npmjs.com/package/eslint-plugin-import),
+  [perfectionist](https://www.npmjs.com/package/eslint-plugin-perfectionist),
+  [prefer-arrow-functions](https://www.npmjs.com/package/eslint-plugin-prefer-arrow-functions),
+  [prettier](https://www.npmjs.com/package/eslint-plugin-prettier),
+  [stylistic](https://www.npmjs.com/package/@stylistic/eslint-plugin) and
+  [unused-imports](https://www.npmjs.com/package/eslint-plugin-unused-imports)
+  plugins.
+- [`typescript.js`](./typescript.js): `base.js` plus
+  [typescript-eslint](https://www.npmjs.com/package/typescript-eslint) with
+  type-aware rules.
+- [`react.js`](./react.js): [React](https://www.npmjs.com/package/eslint-plugin-react)
+  and [React Hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) rules.
+- [`next.js`](./next.js): `react.js` plus the
+  [Next.js](https://www.npmjs.com/package/@next/eslint-plugin-next) Core Web
+  Vitals rules.
+- [`prettier.config.js`](./prettier.config.js): the Prettier options, applied
+  through ESLint.
 
 ## Usage
 
-[ **DISCLAIMER** ]
+Create an `eslint.config.js` and export the config the project needs:
 
-I decided not to extend [eslint:recommended](http://eslint.org/docs/user-guide/migrating-to-1.0.0) configuration to support setups where this is not desired (I personally have not found any one yet, but it might appear... *long silence*... someday...). Anyway, if you want to use it together with this config, and I **highly** recommend you to do that, it is as simple as using on each part of the documentation where it says:
-
-```javascript
-"@mgtitimoli/eslint-config"
+```js
+// JavaScript only
+export {default} from "@mgtitimoli/eslint-config/base.js";
 ```
 
-the following instead:
-
-```javascript
-[
-    "eslint:recommended",
-    "@mgtitimoli/eslint-config"
-]
+```js
+// TypeScript
+export {default} from "@mgtitimoli/eslint-config/typescript.js";
 ```
 
-> We can do this since **ESLint** does not restrict you to [extend](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) just one configuration file
+```js
+// TypeScript + Next.js
+import nextEslintConfig from "@mgtitimoli/eslint-config/next.js";
+import typescriptEslintConfig from "@mgtitimoli/eslint-config/typescript.js";
 
-### General
+const eslintConfig = [...typescriptEslintConfig, ...nextEslintConfig];
 
-**ESLint** allows being configured using a widely amount of [flavours](http://eslint.org/docs/user-guide/configuring#configuration-file-formats), but I personally find the followings very practical:
-
-- Place all the settings under an **eslintConfig** entry in your `package.json`:
-
-```json
-{
-    "name": "my-awesome-project",
-    "eslintConfig": {
-        "extends": "@mgtitimoli/eslint-config"
-    }
-}
+export default eslintConfig;
 ```
 
-- Create an `.eslintrc.json` to hold all the configuration:
+The configs require ESLint 9: ESLint 10 is not supported yet by
+`eslint-plugin-import` and `eslint-plugin-react`.
 
-```json
-{
-    "extends": "@mgtitimoli/eslint-config"
-}
-```
+## Migrating from 0.x
 
-### Custom
+Version 1 is a rewrite using ESLint's
+[flat config](https://eslint.org/docs/latest/use/configure/configuration-files):
 
-This configuration, at the same time, extends the following ones (also present in this package)
+- Replace `.eslintrc.*` (or the `eslintConfig` entry in `package.json`) with an
+  `eslint.config.js` as shown in [Usage](#usage).
+- The `best-practices`, `es6`, `stylistic` and `variables` configs no longer
+  exist: use `base.js` (or one of the configs that extend it) instead.
 
-- [@mgtitimoli/eslint-config/best-practices](./best-practices)
-- [@mgtitimoli/eslint-config/variables](./variables)
-- [@mgtitimoli/eslint-config/stylistic](./stylistic)
-- [@mgtitimoli/eslint-config/es6](./es6)
-
-You can pick just the one(s) that you need, specifying them as follows:
-
-- For example, if you would want to use **best-practices** and **variables** configurations, then your `.eslintrc.json` should contain:
-
-```json
-{
-    "extends": [
-        "@mgtitimoli/eslint-config/best-practices",
-        "@mgtitimoli/eslint-config/variables"
-    ]
-}
-```
-
-## About
-
-I will enumerate below some of the reasons that pushed me to publish this package:
-
-1. **The obvious one**: it allows anyone to be able to use it just doing a simple `npm install`
-2. I have been using this configuration in a lot of projects and I really liked their resulting shape and low complexity
-3. It helps me sharing my passion about code quality and best practices, and encourages teams to take some time to discuss about this
-
-## Other configurations
-
-You might also be interested in the following configurations:
-
-- [@mgtitimoli/eslint-config-babel](https://github.com/mgtitimoli/eslint-config-babel)
-- [@mgtitimoli/eslint-config-react](https://github.com/mgtitimoli/eslint-config-react)
+See ESLint's
+[migration guide](https://eslint.org/docs/latest/use/configure/migration-guide)
+for the rest of the changes.
 
 ## License
 
 [Unlicense](http://unlicense.org)
-

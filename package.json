@@ -6,21 +6,83 @@
   "author": {
     "name": "Mauro Titimoli",
     "email": "mgtitimoli@gmail.com",
-    "url"  : "https://github.com/mgtitimoli"
+    "url": "https://github.com/mgtitimoli"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/mgtitimoli/eslint-config"
   },
   "bugs": {
-    "url": "http://github.com/mgtitimoli/eslint-config/issues"
+    "url": "https://github.com/mgtitimoli/eslint-config/issues"
   },
   "keywords": [
     "eslint",
-    "eslintconfig"
+    "eslintconfig",
+    "prettier"
   ],
-  "main": "index.js",
+  "type": "module",
+  "files": [
+    "base.js",
+    "CHANGELOG.md",
+    "next.js",
+    "prettier.config.js",
+    "react.js",
+    "typescript.js"
+  ],
+  "scripts": {
+    "lint": "eslint",
+    "postinstall": "husky",
+    "postpack": "pinst --enable",
+    "prepack": "pinst --disable"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.39.5",
+    "@next/eslint-plugin-next": "^16.4.2",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@tsconfig/strictest": "^2.0.8",
+    "@typescript-eslint/parser": "^8.71.2",
+    "default-import": "^3.0.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.5",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-perfectionist": "^5.12.1",
+    "eslint-plugin-prefer-arrow-functions": "^3.10.2",
+    "eslint-plugin-prettier": "^5.5.7",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10",
+    "typescript-eslint": "^8.71.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
+    "@semantic-release/changelog": "^7.0.0",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^11.0.1",
+    "conventional-changelog-conventionalcommits": "^10.4.1",
+    "eslint": "^9.39.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "pinst": "^3.0.0",
+    "semantic-release": "^25.0.9"
+  },
   "peerDependencies": {
-    "eslint": "^2.8.0"
-  }
+    "eslint": "^9.39.5",
+    "typescript": "~6.0.3"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "packageManager": "yarn@4.18.1"
 }
