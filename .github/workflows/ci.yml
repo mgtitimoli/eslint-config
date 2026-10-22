@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  pull_request:
+    types:
+      - edited
+      - opened
+      - reopened
+      - synchronize
+
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          cache: yarn
+          node-version-file: .tool-versions
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Lint
+        run: yarn lint
+
+  lint-pr-title:
+    name: Lint PR title
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          cache: yarn
+          node-version-file: .tool-versions
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      # The title goes through env so it is never interpreted by the shell
+      - name: Lint PR title
+        run: yarn commitlint --verbose <<< "$PR_TITLE"
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
